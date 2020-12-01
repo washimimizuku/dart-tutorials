@@ -13,32 +13,19 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+          child: Column(
             children: <Widget>[
-              Container(
-                color: Colors.red,
-                width: 100.0,
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('assets/images/nuno.jpg'),
               ),
-              Column
-                (mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    color: Colors.yellow,
-                    width: 100.0,
-                    height: 100.0,
-                  ),
-                  Container(
-                    color: Colors.green,
-                    width: 100.0,
-                    height: 100.0,
-                  ),
-                ]
-              ),
-              Container(
-                color: Colors.blue,
-                width: 100.0,
+              Text(
+                'Nuno Barreto',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold
+                ),
               ),
             ],
           )
