@@ -34,4 +34,12 @@ class QuizBrain {
     return _questionBank[_questionNumber].questionAnswer;
   }
 
+  bool isFinished() {
+    return _questionNumber >= _questionBank.length - 1;
+  }
+
+  void reset() {
+    _questionNumber = 0;
+  }
+
 }
