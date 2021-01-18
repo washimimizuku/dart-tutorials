@@ -16,8 +16,7 @@ class HeroesController extends ResourceController {
   }
 
   @Operation.get('id')
-  Future<Response> getHeroByID() async {
-    final id = int.parse(request.path.variables['id']);
+  Future<Response> getHeroByID(@Bind.path('id') int id) async {
     final hero = _heroes.firstWhere((hero) => hero['id'] == id, orElse: () => null);
   
     if (hero == null) {
