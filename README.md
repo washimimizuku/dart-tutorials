@@ -1,2 +1,3 @@
-# flutter-app-brewery-tutorials
-Flutter bootcamp by Angela Yu from App Brewery
+# dart-tutorials
+
+Several tutorial, including Flutter bootcamp by Angela Yu from App Brewery
